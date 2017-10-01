@@ -7,7 +7,7 @@
 class AlarmInfo
 {
 public:
-    AlarmInfo();
+    AlarmInfo(QTime time, AlarmType type);
     QTime getTime();
     AlarmType getType();
 private:

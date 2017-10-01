@@ -1,8 +1,9 @@
 #include "alarminfo.h"
 
-AlarmInfo::AlarmInfo()
+AlarmInfo::AlarmInfo(QTime time, AlarmType type)
 {
-
+    this->time = time;
+    this->type = type;
 }
 
 QTime AlarmInfo::getTime()

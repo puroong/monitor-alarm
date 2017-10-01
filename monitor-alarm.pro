@@ -6,7 +6,9 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+CONFIG += console
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets multimedia
 
 TARGET = monitor-alarm
 TEMPLATE = app
@@ -26,13 +28,30 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    alarminfo.cpp
+    alarminfo.cpp \
+    alarm.cpp \
+    regularalarm.cpp \
+    frequentalarm.cpp \
+    alarmlist.cpp \
+    scheduler.cpp
 
 HEADERS += \
         mainwindow.h \
     alarmtype.h \
     alarminfo.h \
-    common.h
+    common.h \
+    alarm.h \
+    regularalarm.h \
+    frequentalarm.h \
+    scheduler.h \
+    alarmlist.h \
+    frequentalarm.h \
+    mainwindow.h \
 
 FORMS += \
         mainwindow.ui
+
+DISTFILES += \
+    bells/analog.wav
+
+INCLUDEPATH += $$PWD
