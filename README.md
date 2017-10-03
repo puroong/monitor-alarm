@@ -24,18 +24,29 @@ chmod +x install.sh
 ```
 
 # Executing
-## For bash
+
+## 1. Set environment variable
+### For bash
 ```
 cd /project/root/directory
 
 echo export MONITORALARMPATH=$(pwd) >> ~/.bashrc
 ```
 
-## For zsh
+### For zsh
 ```
 cd /project/root/directory
 
 echo export MONITORALARMPATH=$(pwd) >> ~/.zshrc
+```
+
+## 2. Restart termial
+
+## 3. Execute
+```
+cd /project/root/directory
+
+./monitor-alarm
 ```
 
 # Credit
