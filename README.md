@@ -23,6 +23,21 @@ chmod +x install.sh
 ./install.sh
 ```
 
+# Executing
+## For bash
+```
+cd /project/root/directory
+
+echo export MONITORALARMPATH=$(pwd) >> ~/.bashrc
+```
+
+## For zsh
+```
+cd /project/root/directory
+
+echo export MONITORALARMPATH=$(pwd) >> ~/.zshrc
+```
+
 # Credit
 
 analog.wav from [soundbible](http://soundbible.com/2197-Analog-Watch-Alarm.html)
